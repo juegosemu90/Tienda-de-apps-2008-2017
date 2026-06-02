@@ -6,7 +6,7 @@ export default defineConfig(({ command }) => ({
   // Cámbialo por el nombre exacto de tu repositorio en GitHub.
   // Ejemplo: si tu repo se llama "mi-appstore" → base: '/mi-appstore/'
   // Si usas un dominio propio o usuario.github.io → base: '/'
-  base: command === 'build' ? '/appstore3/' : '/',
+  base: command === 'build' ? '/Tienda-de-apps-2008-2017/' : '/',
   build: {
     outDir: '../dist',
     emptyOutDir: true,
