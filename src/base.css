@@ -1,0 +1,58 @@
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --navbar-h:    44px;
+  --tabbar-h:    50px;
+  --blue-top:    #6fa8d6;
+  --blue-mid:    #2e6dab;
+  --blue-bot:    #1a4f8c;
+  --blue-border: #174785;
+  --page-bg:     #c8c8cc;
+  --row-bg:      #ffffff;
+  --row-sep:     #d9d9d9;
+  --hdr-bg:      linear-gradient(to bottom, #d8d8da, #c2c2c6);
+  --hdr-border:  #aaaaaa;
+  --hdr-txt:     #444444;
+  --tab-off:     #888888;
+  --tab-on:      #5ac8fa;
+  --star:        #f5a623;
+  --max-w:       700px;
+}
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: var(--page-bg);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* prevent body scroll; content scrolls */
+}
+
+/* Scrollable area between navbar and tabbar */
+.content {
+  flex: 1;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-y: contain;
+}
+
+.content-inner {
+  width: 100%;
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding-bottom: 16px;
+}
+
+.screen        { display: none; }
+.screen.active { display: block; }
+
+/* ── Responsive font scaling ── */
+@media (min-width: 600px) {
+  :root { --navbar-h: 48px; --tabbar-h: 56px; }
+}
