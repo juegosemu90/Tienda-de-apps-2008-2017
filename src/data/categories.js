@@ -1,0 +1,18 @@
+export const categories = [
+  { name: 'Arcade',          icon: '🕹️', bg: 'linear-gradient(135deg, #ff3b30, #ff9500)' },
+  { name: 'Juegos',          icon: '🎮', bg: 'linear-gradient(135deg, #ff3b30, #ff6b6b)' },
+  { name: 'Entretenimiento', icon: '🎬', bg: 'linear-gradient(135deg, #ff9500, #ffcc00)' },
+  { name: 'Utilidades',      icon: '🔧', bg: 'linear-gradient(135deg, #8e8e93, #636366)' },
+  { name: 'Productividad',   icon: '📋', bg: 'linear-gradient(135deg, #2e6dab, #4e8ec4)' },
+  { name: 'Música',          icon: '🎵', bg: 'linear-gradient(135deg, #af52de, #7b2fbe)' },
+  { name: 'Fotografía',      icon: '📷', bg: 'linear-gradient(135deg, #34aadc, #007aff)' },
+  { name: 'Deportes',        icon: '⚽', bg: 'linear-gradient(135deg, #4cd964, #34aa44)' },
+  { name: 'Noticias',        icon: '📰', bg: 'linear-gradient(135deg, #636366, #3a3a3c)' },
+  { name: 'Salud',           icon: '❤️', bg: 'linear-gradient(135deg, #ff2d55, #ff6b81)' },
+  { name: 'Educación',       icon: '📚', bg: 'linear-gradient(135deg, #ffcc00, #ff9500)' },
+  { name: 'Viajes',          icon: '✈️', bg: 'linear-gradient(135deg, #5ac8fa, #007aff)' },
+  { name: 'Finanzas',        icon: '💰', bg: 'linear-gradient(135deg, #4cd964, #248a3d)' },
+  { name: 'Redes Sociales',  icon: '💬', bg: 'linear-gradient(135deg, #007aff, #5ac8fa)' },
+  { name: 'Navegación',      icon: '🗺️', bg: 'linear-gradient(135deg, #34aadc, #4cd964)' },
+  { name: 'Comida',          icon: '🍕', bg: 'linear-gradient(135deg, #ff9500, #ff3b30)' },
+]
