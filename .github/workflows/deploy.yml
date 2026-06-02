@@ -1,4 +1,4 @@
-name: Deploy App Store a GitHub Pages
+name: Deploy App Store a GitHub Page
 
 on:
   push:
