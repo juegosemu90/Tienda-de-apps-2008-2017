@@ -1,0 +1,66 @@
+.tabbar {
+  height: var(--tabbar-h);
+  flex-shrink: 0;
+  background: var(--green);
+  border-top: 1px solid var(--green-dark);
+  display: flex;
+  z-index: 200;
+}
+
+.tab {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  padding: 6px 2px 5px;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  -webkit-tap-highlight-color: transparent;
+  transition: background .1s;
+  min-width: 0;
+  position: relative;
+}
+.tab:active { background: rgba(0,0,0,.12); }
+
+.tab__icon { width: clamp(22px, 5vw, 26px); height: clamp(22px, 5vw, 26px); }
+
+.tab__icon path,
+.tab__icon rect,
+.tab__icon polygon { fill: rgba(255,255,255,.65); }
+
+.tab__icon--stroke path,
+.tab__icon--stroke circle {
+  fill: none;
+  stroke: rgba(255,255,255,.65);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.tab__label {
+  font-size: clamp(9px, 2.2vw, 11px);
+  font-weight: 500;
+  color: rgba(255,255,255,.65);
+  letter-spacing: .2px;
+  white-space: nowrap;
+}
+
+/* Active tab — white + underline indicator */
+.tab.active { background: rgba(0,0,0,.1); }
+.tab.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 10%; right: 10%;
+  height: 3px;
+  background: #fff;
+  border-radius: 2px 2px 0 0;
+}
+.tab.active .tab__label               { color: #fff; font-weight: 700; }
+.tab.active .tab__icon path,
+.tab.active .tab__icon rect,
+.tab.active .tab__icon polygon        { fill: #fff; }
+.tab.active .tab__icon--stroke path,
+.tab.active .tab__icon--stroke circle { stroke: #fff; }
