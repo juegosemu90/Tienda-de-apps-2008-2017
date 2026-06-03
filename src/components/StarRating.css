@@ -1,0 +1,25 @@
+.star-rating {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.star-wrap {
+  position: relative;
+  display: inline-flex;
+}
+
+.star-bg { color: var(--divider); }
+.star-fg {
+  position: absolute;
+  top: 0; left: 0;
+  color: #F9A825;
+  fill: #F9A825;
+}
+
+.rating-number {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-left: 4px;
+}
