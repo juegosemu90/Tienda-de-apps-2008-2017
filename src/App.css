@@ -1,0 +1,28 @@
+.app-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-body {
+  flex: 1;
+  display: flex;
+}
+
+.app-main {
+  flex: 1;
+  min-width: 0;
+  overflow-x: hidden;
+}
+
+@media (min-width: 768px) {
+  .app-main {
+    max-width: calc(100% - 200px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .app-main {
+    max-width: calc(100% - 220px);
+  }
+}
